@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIFT CAT Exam Preparation Guide</title>
+    <style>
+        /* Basic Reset & Defaults */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Headings */
+        h1, h2, h3 {
+            color: #e84393; /* NIFT-like pink/magenta */
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #fde7f0;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        /* Paragraphs and Lists */
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #d63384;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff9fb;
+            border: 1px solid #fde7f0;
+            border-radius: 5px;
+        }
+
+        /* Checklist Styling */
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .checklist li {
+            margin-bottom: 12px;
+            background-color: #fff;
+            padding: 10px 15px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+         .checklist li:hover {
+             background-color: #fefefe;
+         }
+
+        .checklist input[type="checkbox"] {
+            margin-right: 15px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: #e84393; /* Style the checkbox color */
+        }
+
+        .checklist label {
+            cursor: pointer;
+            flex-grow: 1;
+            transition: text-decoration 0.3s ease, color 0.3s ease;
+        }
+
+        .checklist input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: #888;
+        }
+
+        /* Mind Map Styling */
+        .mindmap {
+            list-style: none;
+            padding-left: 0;
+            position: relative;
+        }
+
+        .mindmap ul {
+            list-style: none;
+            padding-left: 30px; /* Indentation for hierarchy */
+            display: block; /* Initially visible */
+            border-left: 2px dashed #f8c8e0; /* Connecting line */
+            margin-left: 10px; /* Space for the line */
+        }
+
+        .mindmap li {
+            position: relative; /* For positioning pseudo-elements */
+            margin-bottom: 10px;
+            background-color: #fef3f7;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #fde7f0;
+        }
+
+        /* Basic line connection - horizontal line from bullet point */
+         .mindmap li::before {
+            content: '';
+            position: absolute;
+            left: -22px; /* Adjust based on padding and line position */
+            top: 15px; /* Center vertically */
+            width: 20px;
+            height: 2px;
+            background-color: #f8c8e0;
+        }
+         .mindmap > li::before { /* No line for root items */
+              display: none;
+         }
+         .mindmap > li { /* More padding for root items */
+             padding: 12px 15px;
+             background-color: #fde7f0;
+         }
+
+        /* Toggle Symbol (+/-) */
+        .mindmap .toggle {
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 8px;
+            display: inline-block;
+            width: 15px; /* Fixed width for alignment */
+            text-align: center;
+            color: #c71585;
+        }
+
+        /* Hide child ULs when collapsed */
+        .mindmap ul.collapsed {
+            display: none;
+        }
+
+        /* Copyright Styling */
+        .copyright {
+            text-align: center;
+            margin-top: 40px; /* Add some space above it */
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+         /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                 font-size: 1.4em;
+            }
+            .mindmap ul {
+                padding-left: 20px;
+                margin-left: 5px;
+            }
+             .mindmap li::before {
+                 left: -17px;
+                 width: 15px;
+             }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>NIFT CAT Exam Preparation Guide</h1>
+
+        <p>Welcome to your comprehensive guide for the NIFT Creative Ability Test (CAT). This plan breaks down the preparation into key areas based on the NIFT syllabus focus. Follow these steps, track your progress with the checklist, and visualize the syllabus with the mind map below.</p>
+
+        <!-- Section 1: Observation & Visualization -->
+        <section id="observation">
+            <h2>1. Sharpening Observation & Visualization</h2>
+            <p>This is about training your eyes and mind to see details and translate them accurately. It's fundamental to creative expression.</p>
+            <ul>
+                <li><strong>Practice Daily Sketching:</strong> Dedicate 15-30 minutes daily. Sketch everyday objects around you (cup, chair, plant, shoe). Focus on capturing their basic form and proportions quickly.</li>
+                <li><strong>Memory Drawing:</strong> Observe an object or scene for 1-2 minutes, then draw it from memory. This strengthens visual recall. Start simple and increase complexity.</li>
+                <li><strong>Perspective Studies:</strong> Learn one-point, two-point, and basic three-point perspective. Draw simple geometric shapes (cubes, cylinders) and then complex objects/scenes (rooms, buildings) using these principles.</li>
+                <li><strong>Quick Scene Sketches:</strong> Try sketching environments (your room, a park, a street view) focusing on composition and capturing the essence rather than minute details.</li>
+                <li><strong>Different Viewpoints:</strong> Draw the same object from multiple angles (top, bottom, side, 3/4 view). This builds spatial understanding.</li>
+            </ul>
+        </section>
+
+        <!-- Section 2: Drawing Fundamentals & Mediums -->
+        <section id="fundamentals">
+            <h2>2. Mastering Drawing Fundamentals & Mediums</h2>
+            <p>Build your technical skills with the core elements of drawing and experiment with different tools.</p>
+            <ul>
+                <li><strong>Lines & Shapes:</strong> Practice drawing confident lines (straight, curved, varied weight). Understand how basic shapes (circles, squares, triangles) form the basis of complex objects.</li>
+                <li><strong>Form & Proportion:</strong> Learn to represent 3D form using shading. Practice drawing objects with accurate proportions – use techniques like comparative measurement.</li>
+                <li><strong>Shading & Texture:</strong> Master shading techniques (hatching, cross-hatching, stippling, blending) to show light, shadow, and form. Practice rendering different textures (wood, metal, fabric, glass).</li>
+                <li><strong>Medium Exploration:</strong>
+                    <ul>
+                        <li><strong>Pencils:</strong> Experiment with different grades (HB, 2B, 4B, 6B) for varying darkness and line quality.</li>
+                        <li><strong>Charcoal:</strong> Use for bold, expressive drawings and smooth shading (can be messy!).</li>
+                        <li><strong>Pens:</strong> Practice line work, stippling, and cross-hatching with fine liners or technical pens.</li>
+                        <li><strong>Colors:</strong> Start with color pencils or watercolors. Understand basic color mixing and application techniques.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Design Principles & Color Theory -->
+        <section id="design-principles">
+            <h2>3. Understanding Design Principles & Color Theory</h2>
+            <p>Learn the 'rules' that make designs work visually and how to use color effectively.</p>
+            <ul>
+                <li><strong>Design Principles:</strong> Study and apply these concepts in your drawings/designs:
+                    <ul>
+                        <li><strong>Balance:</strong> Symmetrical, Asymmetrical, Radial.</li>
+                        <li><strong>Rhythm & Movement:</strong> How the eye travels through the composition.</li>
+                        <li><strong>Contrast:</strong> Using differences (light/dark, size, texture) for emphasis.</li>
+                        <li><strong>Emphasis (Focal Point):</strong> Drawing attention to the most important part.</li>
+                        <li><strong>Pattern & Repetition:</strong> Using recurring elements.</li>
+                        <li><strong>Unity & Harmony:</strong> Making all parts work together cohesively.</li>
+                        <li><strong>Proportion & Scale:</strong> Relationship between sizes of elements.</li>
+                    </ul>
+                </li>
+                <li><strong>Color Theory:</strong>
+                    <ul>
+                        <li><strong>Color Wheel:</strong> Understand primary, secondary, tertiary colors.</li>
+                        <li><strong>Color Properties:</strong> Hue (the color itself), Saturation (intensity), Value (lightness/darkness).</li>
+                        <li><strong>Color Schemes:</strong> Learn about complementary, analogous, monochromatic, triadic schemes and their effects.</li>
+                        <li><strong>Color Psychology:</strong> Understand the emotions and meanings associated with different colors.</li>
+                        <li><strong>Practice:</strong> Create color studies, apply color schemes to simple designs, and analyze color usage in existing artworks/designs.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 4: Creative Thinking & Theme Interpretation -->
+        <section id="creative-thinking">
+            <h2>4. Developing Creative Thinking & Theme Interpretation</h2>
+            <p>NIFT CAT tests your ability to think uniquely and visually communicate ideas based on prompts.</p>
+            <ul>
+                <li><strong>Brainstorming Techniques:</strong> Practice mind mapping, word association, SCAMPER (Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse) for generating ideas.</li>
+                <li><strong>Think Outside the Box:</strong> Challenge assumptions. Ask "what if?". Explore unconventional solutions to prompts.</li>
+                <li><strong>Theme Interpretation:</strong> Analyze past NIFT CAT questions/themes. Practice breaking down a theme, brainstorming related concepts, and developing a unique visual narrative or design.</li>
+                <li><strong>Visual Communication:</strong> Focus on how clearly your drawing conveys the chosen concept or theme. Is the message understandable? Is it visually engaging?</li>
+                <li><strong>Practice Timed Exercises:</strong> Simulate exam conditions. Give yourself a theme and a time limit (e.g., 30-60 mins) to brainstorm, sketch, and finalize a drawing.</li>
+            </ul>
+        </section>
+
+         <!-- Section 5: General Approach -->
+        <section id="approach">
+            <h2>General Study Approach</h2>
+            <ul>
+                <li><strong>Consistency is Key:</strong> Dedicate regular time slots for practice, even if it's just 30-60 minutes daily.</li>
+                <li><strong>Focus Weekly:</strong> You could dedicate specific weeks to each major area (e.g., Week 1: Observation, Week 2: Fundamentals, etc.), then integrate them.</li>
+                <li><strong>Seek Feedback:</strong> If possible, get feedback on your work from peers, mentors, or online communities.</li>
+                <li><strong>Analyze Past Papers:</strong> Look at previous NIFT CAT question papers to understand the types of questions asked and the expected level.</li>
+                <li><strong>Stay Inspired:</strong> Look at art, design, fashion, and everyday life for inspiration. Keep a sketchbook handy always.</li>
+            </ul>
+        </section>
+
+
+        <!-- Section 6: Progress Checklist -->
+        <section id="checklist-section">
+            <h2>Progress Checklist</h2>
+            <p>Tick off items as you gain confidence in each area. Revisit topics as needed.</p>
+            <ul class="checklist" id="progress-checklist">
+                <!-- Checklist items will be populated by JavaScript -->
+            </ul>
+        </section>
+
+        <!-- Section 7: Syllabus Mind Map -->
+        <section id="mindmap-section">
+            <h2>Interactive Syllabus Mind Map</h2>
+            <p>Click the [+] symbols to expand sections and explore the syllabus structure.</p>
+            <ul class="mindmap" id="syllabus-mindmap">
+                <li class="mindmap-item has-children">
+                    <span class="toggle">[-]</span><strong>NIFT CAT Syllabus Core Areas</strong>
+                    <ul>
+                        <li class="mindmap-item has-children">
+                            <span class="toggle">[-]</span><strong>1. Observation & Visualization</strong>
+                            <ul>
+                                <li class="mindmap-item">Daily Sketching (Objects)</li>
+                                <li class="mindmap-item">Memory Drawing</li>
+                                <li class="mindmap-item">Perspective (1, 2, 3-point)</li>
+                                <li class="mindmap-item">Quick Scene Sketches</li>
+                                <li class="mindmap-item">Drawing from Different Viewpoints</li>
+                                <li class="mindmap-item">Detail Focus</li>
+                            </ul>
+                        </li>
+                        <li class="mindmap-item has-children">
+                            <span class="toggle">[-]</span><strong>2. Drawing Fundamentals & Mediums</strong>
+                            <ul>
+                                <li class="mindmap-item">Line Quality & Control</li>
+                                <li class="mindmap-item">Basic Shapes & Construction</li>
+                                <li class="mindmap-item">Representing 3D Form</li>
+                                <li class="mindmap-item">Proportion & Accuracy</li>
+                                <li class="mindmap-item has-children">
+                                    <span class="toggle">[-]</span>Shading Techniques
+                                    <ul>
+                                        <li class="mindmap-item">Hatching / Cross-Hatching</li>
+                                        <li class="mindmap-item">Stippling</li>
+                                        <li class="mindmap-item">Blending</li>
+                                        <li class="mindmap-item">Value Scales</li>
+                                    </ul>
+                                </li>
+                                 <li class="mindmap-item">Texture Rendering</li>
+                                <li class="mindmap-item has-children">
+                                    <span class="toggle">[-]</span>Medium Exploration
+                                    <ul>
+                                        <li class="mindmap-item">Pencils (Grades)</li>
+                                        <li class="mindmap-item">Charcoal</li>
+                                        <li class="mindmap-item">Pens / Ink</li>
+                                        <li class="mindmap-item">Color Pencils</li>
+                                        <li class="mindmap-item">Watercolors / Poster Colors</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mindmap-item has-children">
+                            <span class="toggle">[-]</span><strong>3. Design Principles & Color Theory</strong>
+                            <ul>
+                                <li class="mindmap-item has-children">
+                                     <span class="toggle">[-]</span>Design Principles
+                                    <ul>
+                                        <li class="mindmap-item">Balance (Symmetrical, Asymmetrical)</li>
+                                        <li class="mindmap-item">Rhythm & Movement</li>
+                                        <li class="mindmap-item">Contrast</li>
+                                        <li class="mindmap-item">Emphasis / Focal Point</li>
+                                        <li class="mindmap-item">Pattern & Repetition</li>
+                                        <li class="mindmap-item">Unity & Harmony</li>
+                                        <li class="mindmap-item">Proportion & Scale</li>
+                                    </ul>
+                                </li>
+                                <li class="mindmap-item has-children">
+                                    <span class="toggle">[-]</span>Color Theory
+                                    <ul>
+                                        <li class="mindmap-item">Color Wheel (Primary, Secondary, Tertiary)</li>
+                                        <li class="mindmap-item">Color Properties (Hue, Saturation, Value)</li>
+                                        <li class="mindmap-item">Color Schemes (Complementary, Analogous, etc.)</li>
+                                        <li class="mindmap-item">Color Psychology & Emotion</li>
+                                        <li class="mindmap-item">Color Mixing & Application</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mindmap-item has-children">
+                             <span class="toggle">[-]</span><strong>4. Creative Thinking & Theme Interpretation</strong>
+                            <ul>
+                                <li class="mindmap-item">Brainstorming Methods (Mind Maps, Lists)</li>
+                                <li class="mindmap-item">Concept Development</li>
+                                <li class="mindmap-item">Thinking Outside the Box</li>
+                                <li class="mindmap-item">Analyzing Prompts/Themes</li>
+                                <li class="mindmap-item">Visual Storytelling</li>
+                                <li class="mindmap-item">Communicating Ideas Clearly</li>
+                                <li class="mindmap-item">Timed Practice Drills</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Copyright Notice -->
+        <p class="copyright">Copyright © Aditya Anand</p>
+
+    </div> <!-- End Container -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // --- Checklist Functionality ---
+            const checklist = document.getElementById('progress-checklist');
+            const checklistItems = [
+                // Observation & Visualization
+                "Practice daily object sketching",
+                "Practice memory drawing regularly",
+                "Understand 1-point perspective",
+                "Understand 2-point perspective",
+                "Sketch scenes focusing on composition",
+                "Draw objects from multiple viewpoints",
+                // Fundamentals & Mediums
+                "Practice confident line work",
+                "Construct objects using basic shapes",
+                "Apply shading for 3D form",
+                "Draw objects with accurate proportions",
+                "Practice various shading techniques (hatching, stippling)",
+                "Render different material textures",
+                "Experiment with various pencil grades",
+                "Practice with charcoal",
+                "Practice with pens (line work, textures)",
+                "Practice with color pencils/watercolors",
+                // Design Principles & Color Theory
+                "Identify & Apply Balance in compositions",
+                "Identify & Apply Rhythm/Movement",
+                "Use Contrast effectively",
+                "Create Emphasis/Focal Point",
+                "Incorporate Pattern/Repetition",
+                "Achieve Unity/Harmony",
+                "Understand Color Wheel & Properties",
+                "Apply different Color Schemes",
+                "Understand basic Color Psychology",
+                // Creative Thinking & Theme Interpretation
+                "Practice brainstorming techniques",
+                "Develop unique concepts from prompts",
+                "Analyze past NIFT CAT themes",
+                "Clearly communicate ideas visually",
+                "Complete timed practice exercises"
+            ];
+
+            // Load checklist items and their state from localStorage
+            checklistItems.forEach((itemText, index) => {
+                const li = document.createElement('li');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                const checkboxId = `check-${index}`;
+                checkbox.id = checkboxId;
+                const label = document.createElement('label');
+                label.htmlFor = checkboxId;
+                label.textContent = itemText;
+
+                // Check localStorage for saved state
+                const isChecked = localStorage.getItem(checkboxId) === 'true';
+                checkbox.checked = isChecked;
+                if (isChecked) {
+                     label.style.textDecoration = 'line-through';
+                     label.style.color = '#888';
+                }
+
+                // Add event listener to save state on change
+                checkbox.addEventListener('change', function() {
+                    localStorage.setItem(checkboxId, this.checked);
+                     if (this.checked) {
+                         label.style.textDecoration = 'line-through';
+                         label.style.color = '#888';
+                    } else {
+                         label.style.textDecoration = 'none';
+                         label.style.color = '#333';
+                    }
+                });
+
+                li.appendChild(checkbox);
+                li.appendChild(label);
+                checklist.appendChild(li);
+            });
+
+
+            // --- Mind Map Interactivity ---
+            const mindmap = document.getElementById('syllabus-mindmap');
+            mindmap.addEventListener('click', function(event) {
+                // Check if the clicked element is a toggle span
+                if (event.target.classList.contains('toggle')) {
+                    const toggle = event.target;
+                    const parentLi = toggle.closest('.mindmap-item');
+                    const childUl = parentLi.querySelector(':scope > ul'); // Select direct child ul
+
+                    if (childUl) {
+                        childUl.classList.toggle('collapsed');
+                        // Change toggle symbol
+                        if (childUl.classList.contains('collapsed')) {
+                            toggle.textContent = '[+]';
+                        } else {
+                            toggle.textContent = '[-]';
+                        }
+                    }
+                }
+            });
+
+             // Initialize mind map state (set initial toggle symbols based on display state)
+            const allToggles = mindmap.querySelectorAll('.toggle');
+            allToggles.forEach(toggle => {
+                 const parentLi = toggle.closest('.mindmap-item');
+                 const childUl = parentLi.querySelector(':scope > ul');
+                 if (childUl) {
+                    if (childUl.style.display === 'none' || childUl.classList.contains('collapsed')) {
+                         toggle.textContent = '[+]';
+                         childUl.classList.add('collapsed'); // Ensure class matches state
+                    } else {
+                         toggle.textContent = '[-]';
+                          childUl.classList.remove('collapsed');
+                    }
+                 } else {
+                     // Hide toggle if there are no children (though CSS might already handle this)
+                      // Actually, let's keep the span for consistency but make it non-functional or visually distinct if needed.
+                      // For now, the logic correctly doesn't try to toggle non-existent ULs.
+                 }
+            });
+
+
+        }); // End DOMContentLoaded
+    </script>
+
+</body>
+</html>
